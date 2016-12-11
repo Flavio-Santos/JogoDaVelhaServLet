@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22/11/2016, 01:43:51
+    Author     : Windows
+*/
+
+#caixaVerificaLogin{
+    border: 1px black solid;
+}
+#caixaJogar {
+    height: 500px;
+    border: 1px red solid;
+}
+#caixaJogar div{
+    border: 1px black solid;
+    
+}
+#usuario {
+    height: 400px;
+}
+#infoUsuario {
+    height: 100px;
+    margin-top: 200px;
+}
+#iniciarJogo {
+    height: 100px;
+    margin-top: 200px;
+    text-align: center;
+}
+#menuJogo{
+    height: 400px;
+}
+#pessoasOnline{
+    height: 400px;
+}
+#nomesPessoasOnline {
+    height: 100px;
+    margin-top: 200px;
+}
+#caixaVerificaLogin h2 {
+    text-align: center;
+}

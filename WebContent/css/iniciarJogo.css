@@ -1,0 +1,111 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22/11/2016, 02:37:23
+    Author     : Windows
+*/
+*{
+    box-sizing: border-box;
+    font-size: 20px;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+#tabulheiro{
+    width: 580px;
+    height: 580px;
+    background-color: black;
+    margin: auto;
+
+    padding: 5px;
+    border-radius: 10px;
+}
+.caixa{
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    margin: 5px;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.caixa p{
+    padding: 0;
+    margin: 0px;
+    font-size: 7em;
+    font-family: verdana;
+    text-align: center;
+    color: blueviolet;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.flutuar{
+    float: left;
+}
+#menu{
+    position: absolute;
+    background-color: lightblue;
+    top:-40px;
+    left: 50%;
+    width: 300px;
+    text-align: center;
+    margin-left: -150px;
+    border-radius: 0 0 20px 20px;
+    transition: all 0.9s;
+}
+#bordaMenu {
+    background-color: lightblue;
+    height: 10px;
+}
+#menu:hover{
+    top: -10px;
+}
+#menu p{
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: auto;
+    padding: 20px;
+    cursor: pointer;
+}
+.caixa p{ 
+    height: 180px;
+    border-radius: 5px;
+}
+.labelJogadores{
+    float: left;
+    margin-left: 10%;
+}
+#resultado {
+    margin: auto;
+    width: 580px;
+
+}
+#resultado p{
+    border: 10px black solid;
+    border-radius: 10px;
+    text-align: center;
+    height: 50px;
+    font-size: 20px;
+    padding-top: 1px;
+}
+#vezJogador {
+    margin: auto;
+    width: 580px;
+    margin-top: 30px;
+}
+#vezJogador p{
+    border: 10px black solid;
+    border-radius: 10px;
+    text-align: center;
+    height: 50px;
+    font-size: 20px;
+    padding-top: 1px;
+}
