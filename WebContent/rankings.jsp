@@ -30,9 +30,7 @@ and open the template in the editor.
 <meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
         <link href="css/frame.css" rel="stylesheet" type="text/css"/>
         <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
-        <script>
-            
-        </script>
+ 	<script src="js/utils.js" type="text/javascript"></script>
     </head>
     <body>
         <div id="header" class="col-dg-12">
@@ -83,7 +81,7 @@ and open the template in the editor.
                         <a href="comoJogar.jsp">Como Jogar</a>
                     </li>
                     <li class="col-dg-3">
-                        <a href="rankings.jsp">Rankings</a>
+                        <a href="rankings.jsp" onclick="chamarServletRanking()">Rankings</a>
                 </ul>
             </div>
 
@@ -103,39 +101,16 @@ and open the template in the editor.
                     <tr>
                         <td class="td_pos col-dg-3">Posição</td>
                         <td class="td_nome col-dg-3">Nome</td>
-                        <td class="td_vit col-dg-3">Vitórias</td>
-                        <td class="td_der col-dg-3">Derrotas</td>
+                        <td class="td_vit col-dg-3">Vitórias</td>                    
                     </tr>
-                    <tr>
-                        <td class="td_pos">1°</td>
-                        <td class="td_nome">Jogador1</td>
-                        <td class="td_vit">5</td>
-                        <td class="td_der">1</td>
-                    </tr>
-                    <tr>
-                        <td class="td_pos">2°</td>
-                        <td class="td_nome">Jogador2</td>
-                        <td class="td_vit">4</td>
-                        <td class="td_der">2</td>
-                    </tr>
-                    <tr>
-                        <td class="td_pos">3°</td>
-                        <td class="td_nome">Jogador3</td>
-                        <td class="td_vit">3</td>
-                        <td class="td_der">3</td>
-                    </tr>
-                    <tr>
-                        <td class="td_pos">4°</td>
-                        <td class="td_nome">Jogador4</td>
-                        <td class="td_vit">2</td>
-                        <td class="td_der">4</td>
-                    </tr>
-                    <tr>
-                        <td class="td_pos">5°</td>
-                        <td class="td_nome">Jogador5</td>
-                        <td class="td_vit">1</td>
-                        <td class="td_der">5</td>
-                    </tr>
+                    <c:forEach var="item" items="${partidas}">
+                    	<tr>
+	                        <td class="td_pos">#</td>
+	                        <td class="td_nome">${item.usuario}</td>
+	                        <td class="td_vit">${item.numeroVitorias}</td>
+                    	</tr>
+                    </c:forEach>
+                    
                 </table>
             </div>
 

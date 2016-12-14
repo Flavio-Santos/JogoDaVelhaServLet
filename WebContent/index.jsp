@@ -27,9 +27,7 @@
 <meta name="theme-color" content="#ffffff">
 <link href="css/frame.css" rel="stylesheet" type="text/css" />
 <link href="css/estilo.css" rel="stylesheet" type="text/css" />
-<script>
-	
-</script>
+<script src="js/utils.js" type="text/javascript"></script>
 </head>
 <body>
 	
@@ -73,7 +71,7 @@
 				<li class="col-dg-3"><a href="index.jsp">Inicio</a></li>
 				<li class="col-dg-3"><a href="jogar.jsp">Jogar</a></li>
 				<li class="col-dg-3"><a href="comoJogar.jsp">Como Jogar</a></li>
-				<li class="col-dg-3"><a href="rankings.jsp">Rankings</a>
+				<li class="col-dg-3" ><a href="rankings.jsp" onclick="chamarServletRanking()">Rankings</a>
 			</ul>
 		</div>
 

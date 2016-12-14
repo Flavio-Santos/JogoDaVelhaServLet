@@ -70,7 +70,6 @@ public class UsuarioDAO{
 				return usuario;//retorna um usuario preenchido com os dados a alterar
 			}
 	public boolean Cadastrar(UsuarioVo usuario) {
-		//Query montada, cria usuario usuaros com login e senha e nome e id auto incre
 		String sqlConsulta = "SELECT * FROM usuario where login = '"+usuario.login+"';";
 		Conexao conexaoConsulta = new Conexao();
 		Connection conexaoConsultaMySql = conexaoConsulta.getConexao();//Adiquire conexão com banco de dados
