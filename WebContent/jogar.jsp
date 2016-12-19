@@ -99,30 +99,22 @@ and open the template in the editor.
 
 				<div class="col-dg-8 cor conteudo" onload="verificaLogin()">
 					<div id="caixaVerificaLogin" class="col-dg-12">
-						<h2>Bem Vindo</h2>
+						
 						<div id="caixaJogar">
-							<div class="col-dg-3">
-								<div id="usuario">
-									usuario
-									<div id="infoUsuario">informações</div>
-
-								</div>
-
+							<div class="col-dg-3 vazio">
+							
 							</div>
-							<div class="col-dg-6">
-								<div id="menuJogo">
-									Menu
-									<div id="iniciarJogo">
-										<button onclick="iniciarJogo()">Iniciar Jogo!</button>
-									</div>
+							
+							<div id="caixaIniciarJogo" class="col-dg-6">			
+								<div id="iniciarJogo">
+									<h2>Preparado ??</h2>
+									<span class="quebraLinha"></span>
+									<button id="botaoIniciarJogo" onclick="iniciarJogo()">Iniciar Jogo!</button>
 								</div>
-
 							</div>
-							<div class="col-dg-3">
-								<div id="pessoasOnline">
-									pessoas onlines
-									<div id="nomesPessoasOnline">nomes</div>
-								</div>
+							
+							<div class="col-dg-3 vazio">
+							
 
 							</div>
 						</div>
