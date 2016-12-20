@@ -9,38 +9,34 @@ and open the template in the editor.
 */
 
 #caixaVerificaLogin{
-    border: 1px black solid;
-}
-#caixaJogar {
-    height: 500px;
-    border: 1px red solid;
-}
-#caixaJogar div{
-    border: 1px black solid;
     
 }
-#usuario {
-    height: 400px;
+#iniciarJogo h2{
+    font-size: 65px;
+    text-decoration: underline;
+}
+#caixaIniciarJogo {
+    text-align: center;
+    margin-top: 100px;
+}
+#botaoIniciarJogo{
+	border: 1px solid black;
+	box-shadow: 2px 2px 2px black;
+	text-shadow: 2px 2px 2px black;
+	cursor: pointer;
+	height: 100px;
+	font-size: 30px;
+	color: white;
+	background-color: #397908;
+	transition: 0.3s;
+	border-radius: 5px;
+}
+#botaoIniciarJogo:hover {
+	background-color: #7B0829;
 }
 #infoUsuario {
     height: 100px;
     margin-top: 200px;
 }
-#iniciarJogo {
-    height: 100px;
-    margin-top: 200px;
-    text-align: center;
-}
-#menuJogo{
-    height: 400px;
-}
-#pessoasOnline{
-    height: 400px;
-}
-#nomesPessoasOnline {
-    height: 100px;
-    margin-top: 200px;
-}
-#caixaVerificaLogin h2 {
-    text-align: center;
-}
+
+

@@ -14,34 +14,16 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet("/envia")
 public class Envia extends HttpServlet {
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		response.setContentType("text/plain");
 		ServletContext context = getServletContext();
-		
-		String a = (String) context.getAttribute("a");
-		response.getWriter().print(a);
-		
-		String b = (String) context.getAttribute("b");
-		response.getWriter().print(b);
-		
-		String c = (String) context.getAttribute("c");
-		response.getWriter().print(c);
-		
-		String d = (String) context.getAttribute("d");
-		response.getWriter().print(d);
-		
-		String e = (String) context.getAttribute("e");
-		response.getWriter().print(e);
-		
-		String f = (String) context.getAttribute("f");
-		response.getWriter().print(f);
-		
-		String g = (String) context.getAttribute("g");
-		response.getWriter().print(g);
-		
-		String h = (String) context.getAttribute("h");
-		response.getWriter().print(h);
-		
-		String i = (String) context.getAttribute("i");
-		response.getWriter().print(i);
+		String posicoes = (String) context.getAttribute("posicoes");
+		if (posicoes == null) {
+			response.getWriter().print("{}");
+		} else
+			response.getWriter().print(posicoes);
+
 	}
 }

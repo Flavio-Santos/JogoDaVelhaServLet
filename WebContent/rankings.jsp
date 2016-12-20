@@ -31,6 +31,11 @@ and open the template in the editor.
         <link href="css/frame.css" rel="stylesheet" type="text/css"/>
         <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
  	<script src="js/utils.js" type="text/javascript"></script>
+ 	<script> 
+ 	function onload(){
+ 		
+ 	}
+ 	</script>
     </head>
     <body>
         <div id="header" class="col-dg-12">
@@ -96,16 +101,15 @@ and open the template in the editor.
             </div>
 
             <div class="col-dg-8 cor conteudo" style="overflow-x:auto;">
-                <p id="p_ranking">Ranking dos 5 melhores jogadores</p>
+                <p id="p_ranking">Ranking dos melhores jogadores</p>
                 <table class="table col-dg-12">
                     <tr>
-                        <td class="td_pos col-dg-3">Posição</td>
-                        <td class="td_nome col-dg-3">Nome</td>
-                        <td class="td_vit col-dg-3">Vitórias</td>                    
+                        <td class="td_nome col-dg-4">Nome</td>
+                        <td class="td_vit col-dg-4">Vitórias</td>                    
                     </tr>
                     <c:forEach var="item" items="${partidas}">
                     	<tr>
-	                        <td class="td_pos">#</td>
+	                        
 	                        <td class="td_nome">${item.usuario}</td>
 	                        <td class="td_vit">${item.numeroVitorias}</td>
                     	</tr>

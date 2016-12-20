@@ -10,9 +10,8 @@ body {margin:0;}
     
 }
 
-@media only screen and (min-width:700px) {
-	.col-dp-0{width:0%}
-	.col-dp-1{width:8.33%}
+@media only screen and (min-width:400px) {
+    .col-dp-1{width:8.33%}
     .col-dp-2{width:16.66%}
     .col-dp-3{width:25%}
     .col-dp-4{width:33.33%}
@@ -26,7 +25,7 @@ body {margin:0;}
     .col-dp-12{width:100%}
 }
 
-@media only screen and (min-width:900px) {
+@media only screen and (min-width:700px) {
     .col-dm-1{width:8.33%}
     .col-dm-2{width:16.66%}
     .col-dm-3{width:25%}
@@ -41,7 +40,7 @@ body {margin:0;}
     .col-dm-12{width:100%}
 }
 
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:1000px) {
     .col-dg-1{width:8.33%}
     .col-dg-2{width:16.66%}
     .col-dg-3{width:25%}

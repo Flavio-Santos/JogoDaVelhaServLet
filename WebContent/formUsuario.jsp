@@ -1,5 +1,5 @@
 <div id="include" class="col-dg-2">
-		<span id="txtMsgUsuario">Olá ${nome}!</span>
+		<span id="txtMsgUsuario">Olá ${login}!</span>
 	<form action="BuscarUsuario" method="post">
 		
 		<input type="submit" value="Minha Conta">

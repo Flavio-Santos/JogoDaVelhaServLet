@@ -80,7 +80,7 @@ and open the template in the editor.
                         <a href="comoJogar.jsp">Como Jogar</a>
                     </li>
                     <li class="col-dg-3">
-                        <a href="rankings.jsp">Rankings</a>
+                        <a href="rankings.jsp"onclick="chamarServletRanking()">Rankings</a>
                 </ul>
             </div>
 

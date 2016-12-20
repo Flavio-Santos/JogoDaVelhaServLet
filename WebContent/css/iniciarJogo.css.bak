@@ -7,8 +7,6 @@ and open the template in the editor.
     Created on : 22/11/2016, 02:37:23
     Author     : Windows
 */
-#7B0829
-#397908
 *{
     box-sizing: border-box;
     font-size: 20px;
@@ -17,58 +15,45 @@ and open the template in the editor.
 body {
     margin: 0;
     padding: 0;
-    background-color: rgba(0,0,0,0.9);
-}
-#container{
-	position: relative;
-    left: 50%;
-    width: 580px;
-    margin-left: -290px;
 }
 #tabulheiro{
-    margin-top: 60px;
+    width: 580px;
     height: 580px;
-    background-color: #34000F;
+    background-color: black;
+    margin: auto;
+
     padding: 5px;
     border-radius: 10px;
 }
 .caixa{
     width: 180px;
     height: 180px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: white;
     margin: 5px;
     float: left;
     cursor: pointer;
     border-radius: 5px;
 }
-.caixa:HOVER{
-	background-color: #7B0829;
-	color: white;
-}
 .caixa p{
     padding: 0;
     margin: 0px;
-    font-size: 8.5em;
+    font-size: 7em;
     font-family: verdana;
     text-align: center;
-    color: #7B0829;
+    color: blueviolet;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
 }
-.caixa p:hover{
-	color: white;
-}
 .flutuar{
     float: left;
 }
 #menu{
     position: absolute;
-    background-color: #991F42;
-    color: white;
-    top: -40px;
+    background-color: lightblue;
+    top:-40px;
     left: 50%;
     width: 300px;
     text-align: center;
@@ -76,14 +61,13 @@ body {
     border-radius: 0 0 20px 20px;
     transition: all 0.9s;
 }
+#bordaMenu {
+    background-color: lightblue;
+    height: 10px;
+}
 #menu:hover{
     top: -10px;
 }
-#bordaMenu {
-    background-color: #991F42;
-    height: 10px;
-}
-
 #menu p{
     font-size: 1.1em;
     font-weight: bold;
@@ -113,7 +97,6 @@ body {
     padding-top: 1px;
 }
 #vezJogador {
-	display: none;
     margin: auto;
     width: 580px;
     margin-top: 30px;
@@ -128,16 +111,16 @@ body {
 }
 
 #msg{
-	border: 5px black solid;
-	width: 570px;
+	border: 5px gray solid;
+	width: 700px;
     height: 100px;
     border-radius: 5px;
     position:absolute;
     left:50%;
     top:50%;
-    margin-left: -285px;
+    margin-left: -350px;
     margin-top: -100px;
-    background-color: #397908;
+    background-color: lightblue;
     color: white;
     display: none;
     font-size: 30px;

@@ -12,7 +12,7 @@
 	<h3>O jogo</h3>
 	<ul>
 		<li><a href="comoJogar.jsp">Como jogar</a></li>
-		<li><a href="rankings.jsp">Rankings</a></li>
+		<li><a href="rankings.jsp"onclick="chamarServletRanking()">Rankings</a></li>
 	</ul>
 </div>
 
